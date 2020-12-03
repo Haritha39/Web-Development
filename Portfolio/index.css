@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    height: 150px;
+    width: 150px;
+    border: 1px black solid;
+    border-radius: 25px;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+    color: red
+}
+ul{
+    width: fit-content;
+    text-align: left;
+}
+li{
+    color: cornsilk;
+    border: 1px solid rgb(43, 33, 33);
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.name{
+    text-align: center;
+}
+.heading{
+    color: slateblue;
+}
+.grid-container{
+    display: grid;
+    background-color: antiquewhite;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    padding: 20px;
+    grid-gap: 50px;
+    align-items: inherit;
+}
+.image-heading{
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+    .grid-container{
+    width: 100%;
+    }
+    .image-heading{
+        text-align: left;
+    }
+   .item1{
+       grid-area: 1 /span 3;
+   }
+   .item2{
+        grid-area: 2 /span 3;
+    }
+    .item3{
+        grid-area:  3 /span 3;
+    }
+    .item4{
+        grid-area:  4 /span 3;
+    }
+    .item5{
+        grid-area:  5 /span 3;
+    }
+    .item6{
+        grid-area:  6 /span 3;
+    }
+    .details{
+        height: auto;
+    }
+}
+
+.details{
+    height: 400px;
+    background-color: rgb(184, 174, 173);
+    text-align: center;
+}
+
+.row{
+    clear: both;
+    content: "";
+    /* display: table; */
+}
+.details-1{
+   float: left;
+   padding-left: 50px;
+   text-align: left;
+   color: rgb(14, 3, 3);
+   border: 1px black solid;
+}
+[class*="col-"] {
+    width: 100%;
+  }
+@media only screen and (min-width: 768px){
+    /* .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;} */
+    .details-1{
+        width: 100%;
+        float: left;
+        /* background-color: lightcoral; */
+    }
+    .details-1.col-3 {
+        width: 25%;
+    }
+
+}
